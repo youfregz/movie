@@ -1,0 +1,25 @@
+.movie-card {
+  max-width: fit-content;
+  min-width: 600px;
+  max-height: 450px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 24px;
+  font-family: "Fira Code Medium", monospace;
+}
+.movie-pic {
+  max-width: 220px;
+  max-height: 450px;
+}
+.movie-overview {
+  margin: 0;
+  height: 290px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-title, .movie-overview, .movie-rating {
+  color: white;
+}
+
+/*# sourceMappingURL=MovieCard.css.map */

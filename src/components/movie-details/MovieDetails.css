@@ -1,0 +1,58 @@
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px 240px;
+}
+.details-image {
+  object-fit: cover;
+  max-width: 300px;
+  max-height: 450px;
+  border-radius: 8px;
+}
+.details-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  color: #e0dcdc;
+}
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.details-title, .details-tagline, .details-overview {
+  color: #e0dcdc;
+}
+.details-tagline {
+  margin-top: 8px;
+  font-size: 24px;
+  display: flex;
+}
+.details-overview {
+  width: 60%;
+}
+.details-rating {
+  display: flex;
+  align-items: flex-start;
+  font-weight: bold;
+  color: #17e117;
+  white-space: nowrap;
+  font-size: 40px;
+}
+.details-rating--count {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+.rating-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  font-family: "Fira Code Medium", monospace;
+}
+
+/*# sourceMappingURL=MovieDetails.css.map */

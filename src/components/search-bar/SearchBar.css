@@ -1,0 +1,30 @@
+.search-bar, .search-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-input {
+  background-color: aliceblue;
+  width: 60%;
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  padding: 24px;
+  font-size: 24px;
+  align-self: center;
+}
+.search-btn {
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  padding: 24px;
+  font-size: 20px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  margin-left: 24px;
+  font-family: "Fira Code Medium", monospace;
+}
+
+/*# sourceMappingURL=SearchBar.css.map */

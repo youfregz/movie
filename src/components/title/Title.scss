@@ -1,0 +1,14 @@
+.title {
+  font-family: "Fira Code Medium", monospace;
+  color: #f9f9f9;
+
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit; // сохраняет цвет от родителя
+    text-decoration: none;
+  }
+}

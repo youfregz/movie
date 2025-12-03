@@ -1,0 +1,28 @@
+.movie {
+
+  &-card {
+    max-width: fit-content;
+    min-width: 600px;
+    max-height: 450px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 24px;
+    font-family: "Fira Code Medium", monospace;
+
+  }
+  &-pic {
+    max-width: 220px;
+    max-height: 450px;
+  }
+  &-overview {
+    margin: 0;
+    height: 290px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-title, &-overview, &-rating {
+  color: white;
+  }
+}
