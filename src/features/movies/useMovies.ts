@@ -8,8 +8,12 @@ export const useMovies = () => {
     const { items, page, totalPages, status, query } = useSelector((s: RootState) => s.movies);
 
     useEffect(() => {
-        if (!items.length) dispatch(fetchPopularMovies());
-    }, [dispatch, items.length]);
+        if (query) {
+            dispatch(searchMovies({ query, page: 1 })); // новый поиск — с 1 страницы
+        } else if (!items.length || page === 1) {
+            dispatch(fetchPopularMovies(1));
+        }
+    }, [dispatch, query]); // ← главное: зависимость от query
 
     const loadMore = () => {
         if (status === 'loading' || page >= totalPages) return;

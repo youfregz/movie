@@ -12,8 +12,7 @@ export default function MovieList() {
     const { items, status, page, totalPages, loadMore } = useMovies();
 
     if (status === 'loading' && !items.length) return <Loader />;
-    if (!items.length) return <EmptyState message="Ничего не найдено" />;
-
+    if (status !== 'loading' && !items.length) return <EmptyState message="Такого фильма нет, проверьте название" />;
     return (
         <section className="movie-list">
             {items.map((m) => <MovieCard key={m.id} movie={m} />)}

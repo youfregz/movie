@@ -68,9 +68,11 @@ const moviesSlice = createSlice({
     },
     extraReducers: (builder) => {
         builder
-            .addCase(searchMovies.pending, (state) => {
-                state.status = 'loading';
-                state.error = null;
+            .addCase(searchMovies.pending, (state, action) => {
+                if (action.meta.arg.page === 1) {
+                    state.items = [];
+                    state.status = 'loading';
+                }
             })
             .addCase(searchMovies.fulfilled, (state, action) => {
                 if (action.meta.arg.page > 1) {

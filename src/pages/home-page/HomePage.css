@@ -1,6 +1,9 @@
 .home-page {
   background-color: #2d2d2d;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=HomePage.css.map */
