@@ -1,6 +1,6 @@
 
 import MovieCard from '../movie-card/MovieCard';
-import './MovieList.css'
+import './MovieList.scss'
 import LoadMoreButton from "../load-more/LoadMoreButton.tsx";
 import {useMovies} from "../../features/movies/useMovies.ts";
 import Loader from "../loader/Loader.tsx";

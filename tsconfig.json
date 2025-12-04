@@ -10,7 +10,6 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "types": [],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -41,5 +40,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "include": ["src", "global.d.ts"]
 }

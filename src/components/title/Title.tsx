@@ -1,10 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import type { AppDispatch } from '../../app/store';
 import {clearResults, fetchPopularMovies} from '../../features/movies/moviesSlice';
 import './Title.scss';
 
 export default function Title({ text }: { text: string }) {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch<AppDispatch>();
     const location = useLocation();
 
     const handleClick = () => {

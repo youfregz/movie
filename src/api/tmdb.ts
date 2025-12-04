@@ -4,7 +4,6 @@ import axios from 'axios';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE = 'https://api.themoviedb.org/3';
 const IMAGE_BASE = 'https://image.tmdb.org/t/p/w500';
-console.log('All env:', import.meta.env);
 
 const instance = axios.create({
     baseURL: BASE,

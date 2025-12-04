@@ -10,7 +10,7 @@ export const useMovies = () => {
     useEffect(() => {
         if (query) {
             dispatch(searchMovies({ query, page: 1 })); // новый поиск — с 1 страницы
-        } else if (!items.length || page === 1) {
+        } else if (!items.length) {
             dispatch(fetchPopularMovies(1));
         }
     }, [dispatch, query]); // ← главное: зависимость от query

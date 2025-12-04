@@ -60,6 +60,7 @@ const moviesSlice = createSlice({
             state.query = action.payload;
         },
         clearResults(state) {
+            state.query = '';
             state.items = [];
             state.page = 1;
             state.totalPages = 1;

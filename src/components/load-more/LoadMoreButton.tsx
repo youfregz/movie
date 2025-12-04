@@ -1,10 +1,10 @@
-import './LoadMoreButton.css'
+import './LoadMoreButton.scss'
 
-interface Props {
+interface LoadMoreButtonProps {
     onClick: () => void;
 }
 
-export default function LoadMoreButton({ onClick }: Props) {
+export default function LoadMoreButton({ onClick }: LoadMoreButtonProps) {
     return (
         <button onClick={onClick} className="load-more">
             Посмотреть ещё
